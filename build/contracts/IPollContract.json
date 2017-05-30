@@ -1,0 +1,57 @@
+{
+  "contract_name": "IPollContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "pollType",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "question",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_amount",
+          "type": "int256"
+        },
+        {
+          "name": "_ballot",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deltaVote",
+      "outputs": [
+        {
+          "name": "_succes",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1496133932577
+}
