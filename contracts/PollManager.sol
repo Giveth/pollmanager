@@ -110,7 +110,7 @@ contract PollManager is LowLevelStringManipulator, Owned {
         if (_idPoll >= _polls.length) throw;
         Poll p = _polls[_idPoll];
         if (getBlockNumber() < p.startBlock) throw;
-        if (getBlockNumber() >= p.endBlock) throw;
+        if (getBlockNumber() > p.endBlock) throw;
         if (p.canceled) throw;
 
         uint amount = p.votes[msg.sender].amount;
